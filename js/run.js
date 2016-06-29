@@ -12,7 +12,7 @@
 			type:'beer'
 		};
 
-		url= 'http://api.brewerydb.com/v2/search/style/?key=b5637d693e0cdb21a8821a6cdcfcc383';
+		url= 'https://api.brewerydb.com/v2/search/style/?key=b5637d693e0cdb21a8821a6cdcfcc383';
 
 		$.getJSON(url, params, function(data){
 			showResults(data.data);
@@ -47,7 +47,7 @@
 			styleId:styleId
 		};
 
-		url= 'http://api.brewerydb.com/v2/beers/?key=b5637d693e0cdb21a8821a6cdcfcc383';
+		url= 'https://api.brewerydb.com/v2/beers/?key=b5637d693e0cdb21a8821a6cdcfcc383';
 
 		$.getJSON(url, params, function(data){
 			showBeerResults(data.data);
